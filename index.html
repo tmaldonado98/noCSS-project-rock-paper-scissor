@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <script src="script.js" defer></script>
+    </head>
+
+<body>
+    
+   
+    <form>
+        <h1>Rock, Paper, Scissor</h1>
+        <h2>The best of 3 rounds wins</h2><br><h3>Round 1</h3>
+        <select onclick="cpuMove, console.log(cpuMove)" id="form">
+            <option onclick="popNoSelection()" id="none">Select an option.</option>
+            <option onclick="popRock(), showButton()" id="rock">Rock</option>
+            <option onclick="popPaper(), showButton()" id="paper">Paper</option>
+            <option onclick="popScissor(), showButton()" id="scissor">Scissor</option>
+        </select>
+        <p>Your selection: </p> 
+        <h4 id="humanSelection"></h4>
+    <br>
+
+    
+   <!--<div id="cpuButtonDiv">
+        <input id="input", type="button", value="Click for CPU's move."></input>
+            
+   
+        </div>-->
+            
+        
+        <div id="pDiv">
+                <p>CPU's selection: </p>
+            </div> 
+            <h4 id="cpu-selection"></h4> 
+
+    
+    <br>
+    <br>
+    <br>
+
+    <!---->
+    <input onclick="conditional(), showCpuMove(), showPDiv(), showScore1(), showNextRound(), showPlayAgain()" , 
+    id="button" type="button" value="Click to view results."></input>
+    <h4 id="resultText"></h4>
+    </form>
+
+    <h2 id="round-result"></h2>
+<br><br><br>
+<input id="playAgain" type="button", value="Start Over" onclick="history.go(0)"></button>
+
+<br><br>
+
+<button id="nextRound"><a href="./round2.html">Play Next Round</a></button>
+
+
+<h4 id="cumulScoreHum"></h4>
+<h4 id="cumulScoreCPU"></h4>
+
+
+<script>
+    
+
+    </script>
+
+</body>
+</html>
